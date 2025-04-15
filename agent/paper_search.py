@@ -8,7 +8,7 @@ class PaperSearch:
     def __init__(self):
         self.api_key = os.getenv("SERPAPI_KEY")
         if not self.api_key:
-            raise ValueError("Missing SERPAPI_KEY. Please check your .env file.")
+            raise ValueError("SERPAPI_KEY not found. Please check your .env file.")
 
         self.base_url = "https://serpapi.com/search"
 
