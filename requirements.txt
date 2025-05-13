@@ -1,6 +1,0 @@
-python-dotenv
-serpapi
-langchain-core
-langchain-community
-langchain-groq
-requests
