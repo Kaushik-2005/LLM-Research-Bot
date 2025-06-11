@@ -28,3 +28,6 @@ A tool to help researchers find relevant papers for literature reviews based on 
 3. Papers will be clustered by similarity
 4. The most relevant papers will be selected
 5. Summaries will be generated for the selected papers
+
+
+# WORK IN PROGRESS
