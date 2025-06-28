@@ -1,0 +1,1107 @@
+{
+  "query": "NLP, natural language processing, language models, LLM, ASR, TTS, speech recognition, text generation, BERT, GPT, transformer, sentiment analysis, machine translation",
+  "top_n": 50,
+  "n_clusters": null,
+  "total_papers": 50,
+  "papers": [
+    {
+      "title": "An Overview of the Application of Convolutional Neural Networks inSentiment Analysis",
+      "authors": [
+        "Hao Wang"
+      ],
+      "year": 2024,
+      "abstract": "The field of natural language processing, or NLP, uses its understanding of human language to find practical solutions to issues. It mainly includes two parts: the core task and the application. The core task represents the common problem that needs to be solved in various natural language application directions. It includes language models, morphology, grammar analysis, semantic analysis, etc. At the same time, the application section focuses on specific natural language processing tasks such as machine translation, information retrieval, question-answering systems, dialogue systems, etc. Natural language processing has made a significant contribution to the development of human society and the economy and provides strong support for all aspects of research work. Opinion mining, or sentiment analysis, is a subfield of natural language processing that develops systems for identifying and extracting ideas from text. Sentiment analysis is a hot topic since it has many practical applications. Many opinion-expressing texts are available on review sites, forums, blogs, and social media as the amount of publicly available information on the Internet grows. This unstructured information can then be automatically transformed into structured data about products, services, brands, politics, or other topics on which people can express their opinions using sentiment analysis systems. This information can be used for marketing analytics, public relations, product reviews, network sponsor ratings, product feedback, and customer service. With the rapid growth of labeled sample data sets and the notable enhancement in graphics processor (GPU) performance, convolutional neural network research has advanced rapidly and achieved remarkable leads to various computer vision tasks. By reviewing the application of CNN, we see that convolutional operations are naturally suitable for some text processing and, thus, naturally suitable for the background of sentiment analysis.",
+      "url": "https://www.semanticscholar.org/paper/0051cdf27396e0ae8d97117a7343de54b53d6b00",
+      "keywords": [
+        "mining sentiment",
+        "opinion mining",
+        "sentiment analysis",
+        "processing nlp",
+        "text sentiment",
+        "nlp uses",
+        "natural language"
+      ],
+      "cluster": 0,
+      "similarity": 0.5243229866027832
+    },
+    {
+      "title": "The Current State of Finnish NLP",
+      "authors": [
+        "Mika Hämäläinen",
+        "Khalid Alnajjar"
+      ],
+      "year": 2021,
+      "abstract": "There are a lot of tools and resources available for processing Finnish. In this paper, we survey recent papers focusing on Finnish NLP related to many different subcategories of NLP such as parsing, generation, semantics and speech. NLP research is conducted in many different research groups in Finland, and it is frequently the case that NLP tools and models resulting from academic research are made available for others to use on platforms such as Github.",
+      "url": "https://www.semanticscholar.org/paper/004c2b0db21d1c7732149ed4bb20c2f612cb3740",
+      "keywords": [
+        "finnish nlp",
+        "nlp tools",
+        "nlp research",
+        "nlp parsing",
+        "nlp related",
+        "speech nlp",
+        "nlp"
+      ],
+      "cluster": 0,
+      "similarity": 0.472847580909729
+    },
+    {
+      "title": "Building language technology infrastructures to support a collaborative approach to language resource building",
+      "authors": [
+        "Flammie A. Pirinen",
+        "Francis M. Tyers"
+      ],
+      "year": 2021,
+      "abstract": "Digital infrastructures are a vital part of support for providing a research framework and platform in engineering their digital lexicography and grammars and deploying the to end-users as real NLP software products.",
+      "url": "https://www.semanticscholar.org/paper/000c8e5458a17562d1053a00ae5078b25825c83d",
+      "keywords": [
+        "language technology",
+        "building language",
+        "technology infrastructures",
+        "nlp software",
+        "digital lexicography",
+        "infrastructures support",
+        "grammars deploying"
+      ],
+      "cluster": -1,
+      "similarity": 0.45611193776130676
+    },
+    {
+      "title": "TamilATIS: Dataset for Task-Oriented Dialog in Tamil",
+      "authors": [
+        "S Ramaneswaran",
+        "Sanchit Vijay",
+        "Kathiravan Srinivasan"
+      ],
+      "year": 2022,
+      "abstract": "Task-Oriented Dialogue (TOD) systems allow users to accomplish tasks by giving directions to the system using natural language utterances. With the widespread adoption of conversational agents and chat platforms, TOD has become mainstream in NLP research today. However, developing TOD systems require massive amounts of data, and there has been limited work done for TOD in low-resource languages like Tamil. Towards this objective, we introduce TamilATIS - a TOD dataset for Tamil which contains 4874 utterances. We present a detailed account of the entire data collection and data annotation process. We train state-of-the-art NLU models and report their performances. The joint BERT model with XLM-Roberta as utterance encoder achieved the highest score with an intent accuracy of 96.26% and slot F1 of 94.01%.",
+      "url": "https://www.semanticscholar.org/paper/0012a2a14d69cf6cea974503f90affcb32b96a7a",
+      "keywords": [
+        "dialog tamil",
+        "tamil task",
+        "dataset tamil",
+        "language utterances",
+        "nlu models",
+        "tamilatis dataset",
+        "dialogue tod"
+      ],
+      "cluster": 1,
+      "similarity": 0.44944876432418823
+    },
+    {
+      "title": "Quantitative Stopword Generation for Sentiment Analysis via Recursive and Iterative Deletion",
+      "authors": [
+        "Daniel M. DiPietro"
+      ],
+      "year": 2022,
+      "abstract": "Stopwords carry little semantic information and are often removed from text data to reduce dataset size and improve machine learning model performance. Consequently, researchers have sought to develop techniques for generating effective stopword sets. Previous approaches have ranged from qualitative techniques relying upon linguistic experts, to statistical approaches that extract word importance using correlations or frequency-dependent metrics computed on a corpus. We present a novel quantitative approach that employs iterative and recursive feature deletion algorithms to see which words can be deleted from a pre-trained transformer's vocabulary with the least degradation to its performance, specifically for the task of sentiment analysis. Empirically, stopword lists generated via this approach drastically reduce dataset size while negligibly impacting model performance, in one such example shrinking the corpus by 28.4% while improving the accuracy of a trained logistic regression model by 0.25%. In another instance, the corpus was shrunk by 63.7% with a 2.8% decrease in accuracy. These promising results indicate that our approach can generate highly effective stopword sets for specific NLP tasks.",
+      "url": "https://www.semanticscholar.org/paper/0054244017d708dffe45ccd0e2978af6394fb5a6",
+      "keywords": [
+        "deletion stopwords",
+        "stopword generation",
+        "shrinking corpus",
+        "stopwords",
+        "effective stopword",
+        "empirically stopword",
+        "vocabulary degradation"
+      ],
+      "cluster": 0,
+      "similarity": 0.4286454916000366
+    },
+    {
+      "title": "TokenVerse: Towards Unifying Speech and NLP Tasks via Transducer-based ASR",
+      "authors": [
+        "Shashi Kumar",
+        "S. Madikeri",
+        "Juan Pablo Zuluaga",
+        "Iuliia Thorbecke",
+        "Esaú Villatoro-Tello",
+        "Sergio Burdisso",
+        "P. Motlícek",
+        "Karthik Pandia",
+        "A. Ganapathiraju"
+      ],
+      "year": 2024,
+      "abstract": "In traditional conversational intelligence from speech, a cascaded pipeline is used, involving tasks such as voice activity detection, diarization, transcription, and subsequent processing with different NLP models for tasks like semantic endpointing and named entity recognition (NER). Our paper introduces TokenVerse, a single Transducer-based model designed to handle multiple tasks. This is achieved by integrating task-specific tokens into the reference text during ASR model training, streamlining the inference and eliminating the need for separate NLP models. In addition to ASR, we conduct experiments on 3 different tasks: speaker change detection, endpointing, and NER. Our experiments on a public and a private dataset show that the proposed method improves ASR by up to 7.7% in relative WER while outperforming the cascaded pipeline approach in individual task performance. Our code is publicly available: https://github.com/idiap/tokenverse-unifying-speech-nlp",
+      "url": "https://www.semanticscholar.org/paper/0066094a09925dd0b3bac1bacf501f14d52a5e7a",
+      "keywords": [
+        "nlp tasks",
+        "speech nlp",
+        "tasks speaker",
+        "unifying speech",
+        "tasks voice",
+        "speech cascaded",
+        "voice activity"
+      ],
+      "cluster": 1,
+      "similarity": 0.4220626652240753
+    },
+    {
+      "title": "Deromanization of Code-mixed Texts",
+      "authors": [
+        "Rashed Rubby Riyadh"
+      ],
+      "year": 2019,
+      "abstract": "The conversion of romanized texts back to the native scripts is a challenging task because of the inconsistent romanization conventions and non-standard language use. This problem is compounded by code-mixing, i.e., using words from more than one language within the same discourse. Considering these two problems together is necessary to utilize the NLP resources and tools that are developed and trained on text corpora written in the standard form of the language. In this thesis, we propose a novel approach for handling these two problems together in a single system. Due to the unavailability of suf-ﬁciently large annotated resources for training an end-to-end approach, the proposed approach combines several supervised models for the three components: word-level language identiﬁcation, back-transliteration, and sequence prediction. The results of the experiments on Bengali and Hindi datasets show that the proposed approach is substantially more accurate than Google Translate, and establish the state of the art for the task of deromanization of code-mixed texts.",
+      "url": "https://www.semanticscholar.org/paper/0076c67d6a27539efe291173dd03329707618dd0",
+      "keywords": [
+        "romanization",
+        "utilize nlp",
+        "text corpora",
+        "transliteration",
+        "transliteration sequence",
+        "identiﬁcation transliteration",
+        "inconsistent romanization"
+      ],
+      "cluster": -1,
+      "similarity": 0.4178609251976013
+    },
+    {
+      "title": "A Chinese QA model based on BERT",
+      "authors": [
+        "Yun Lin"
+      ],
+      "year": 2023,
+      "abstract": "In recent years, Question-answering QA systems have become a trend. These systems utilize AI to com- prehend the context of text and automatically select answers to questions. The Bidirectional Encoder Representations from Transformers (BERT), which has demonstrated impressive performance in natural language processing (NLP) tasks, has since become a widely adopted model in the field of NLP. This paper introduces a straightforward yet effective model based on BERT for answering Chinese-related questions. The proposed model trains in both directions of context in all layers and leverages specific knowledge from unlabeled data. The experiments conducted on QA tasks involving over 20,000 history examinations in Chinese reveal that the enhanced model surpasses traditional models, achieving a maximum accuracy of 99.31%.",
+      "url": "https://www.semanticscholar.org/paper/005c830cd57c7230eeaed6d7ad280398f67154e7",
+      "keywords": [
+        "bert answering",
+        "question answering",
+        "nlp tasks",
+        "answering chinese",
+        "transformers bert",
+        "based bert",
+        "answering qa"
+      ],
+      "cluster": 1,
+      "similarity": 0.41131412982940674
+    },
+    {
+      "title": "Sentiment-based Candidate Selection for NMT",
+      "authors": [
+        "Alex Jones",
+        "Derry Tanti Wijaya"
+      ],
+      "year": 2021,
+      "abstract": "The explosion of user-generated content (UGC)—e.g. social media posts and comments and and reviews—has motivated the development of NLP applications tailored to these types of informal texts. Prevalent among these applications have been sentiment analysis and machine translation (MT). Grounded in the observation that UGC features highly idiomatic and sentiment-charged language and we propose a decoder-side approach that incorporates automatic sentiment scoring into the MT candidate selection process. We train monolingual sentiment classifiers in English and Spanish and in addition to a multilingual sentiment model and by fine-tuning BERT and XLM-RoBERTa. Using n-best candidates generated by a baseline MT model with beam search and we select the candidate that minimizes the absolute difference between the sentiment score of the source sentence and that of the translation and and perform two human evaluations to assess the produced translations. Unlike previous work and we select this minimally divergent translation by considering the sentiment scores of the source sentence and translation on a continuous interval and rather than using e.g. binary classification and allowing for more fine-grained selection of translation candidates. The results of human evaluations show that and in comparison to the open-source MT baseline model on top of which our sentiment-based pipeline is built and our pipeline produces more accurate translations of colloquial and sentiment-heavy source texts.",
+      "url": "https://www.semanticscholar.org/paper/002b2c83e0a37c1ba796d5fc7e21d26ca198d43c",
+      "keywords": [
+        "automatic sentiment",
+        "sentiment scoring",
+        "sentiment scores",
+        "sentiment score",
+        "sentiment classifiers",
+        "monolingual sentiment",
+        "multilingual sentiment"
+      ],
+      "cluster": 0,
+      "similarity": 0.4068220257759094
+    },
+    {
+      "title": "Chatbot: A Deep Neural Network Based Human to Machine Conversation Model",
+      "authors": [
+        "G Krishna Vamsi",
+        "A. Rasool",
+        "Gaurav Hajela"
+      ],
+      "year": 2020,
+      "abstract": "A conversational agent (chatbot) is computer software capable of communicating with humans using natural language processing. The crucial part of building any chatbot is the development of conversation. Despite many developments in Natural Language Processing (NLP) and Artificial Intelligence (AI), creating a good chatbot model remains a significant challenge in this field even today. A conversational bot can be used for countless errands. In general, they need to understand the user's intent and deliver appropriate replies. This is a software program of a conversational interface that allows a user to converse in the same manner one would address a human. Hence, these are used in almost every customer communication platform, like social networks. At present, there are two basic models used in developing a chatbot. Generative based models and Retrieval based models. The recent advancements in deep learning and artificial intelligence, such as the end-to-end trainable neural networks have rapidly replaced earlier methods based on hand-written instructions and patterns or statistical methods. This paper proposes a new method of creating a chatbot using a deep neural learning method. In this method, a neural network with multiple layers is built to learn and process the data.",
+      "url": "https://www.semanticscholar.org/paper/004147dab6dc3372133f551f06d40d0aecc2951e",
+      "keywords": [
+        "chatbot generative",
+        "creating chatbot",
+        "chatbot model",
+        "developing chatbot",
+        "building chatbot",
+        "chatbot development",
+        "conversational bot"
+      ],
+      "cluster": -1,
+      "similarity": 0.4038587808609009
+    },
+    {
+      "title": "Spoken Language Identification Using Prosody, Phonotactics, and Acoustics: A Review",
+      "authors": [
+        "Irshad Ahmad Thukroo",
+        "Rumaan Bashir",
+        "Kaiser J. Giri"
+      ],
+      "year": 2022,
+      "abstract": "Spoken language identification (LID) is the identification of language present in a speech segment despite its size (duration and speed), ambiance (topic and emotion), and moderator (gender, age, demographic region). Information Technology has touched new vistas for a couple of decades mostly to simplify the day-to-day life of humans. One of the key contributions of Information Technology is the application of Artificial Intelligence to achieve better results. The advent of artificial intelligence has given rise to a new branch of Natural Language Processing (NLP) called Computational Linguistics, which generates frameworks for intelligently manipulating spoken language knowledge and has brought human–machine into a new stage. In this context, speech has arisen to be one of the imperative forms of interfaces, which is the basic mode of communication for us, and generally the most preferred one. Recognition of the spoken language is a frontend for several technologies, like multiple languages conversation systems, expressed translation software, multilingual speech recognition, spoken word extraction, speech production systems. This paper reviews and summarises the different levels of information that can be used for language identification. A broad study of acoustic, phonetic, and prosody features has been provided and various classifiers have been used for spoken language identification specifically for Indian languages. This paper has investigated various existing spoken language identification models implemented using prosodic, phonotactic, acoustic, and deep learning approaches, the datasets used, and performance measures utilized for their analysis. It also highlights the main features and challenges faced by these models. Moreover, this review analyses the efficiency of the spoken language models that can help the researchers to propose new language identification models for speech signals.",
+      "url": "https://www.semanticscholar.org/paper/0052756b1cbbb6890b05b0e3aff107a298ac0fb6",
+      "keywords": [
+        "language identification",
+        "identification language",
+        "speech recognition",
+        "spoken language",
+        "recognition spoken",
+        "extraction speech",
+        "multilingual speech"
+      ],
+      "cluster": -1,
+      "similarity": 0.39776283502578735
+    },
+    {
+      "title": "Sentiment analysis through twitter as a mechanism for assessing university satisfaction",
+      "authors": [
+        "O. Chamorro-Atalaya",
+        "Dora Arce-Santillan",
+        "Guillermo Morales-Romero",
+        "César León-Velarde",
+        "Primitiva Ramos-Salaza",
+        "Elizabeth Auqui-Ramos",
+        "Miguel Levano-Stella"
+      ],
+      "year": 2022,
+      "abstract": "Currently, the data generated in the university environment related to the perception of satisfaction is generated through surveys with categorical response questions defined on a Likert scale, with factors already defined to be evaluated, applied once per academic semester, which generates very biased information. This leads us to wonder why this survey is applied only once and why it only asks about some factors. The objective of the article is to demonstrate the feasibility of a proposal to determine the degree of perception of student satisfaction through the use of data science and natural language processing (NLP), supported by the social network twitter, as an element of data collection. As a result of the application of this proposal based on data science, it was possible to determine the level of student satisfaction, being 57.27%, through sentiment analysis using the Python library \"NLTK\"; Thus, it was also possible to extract texts linked to the relevant factors of teaching performance to achieve student satisfaction, through the term frequency and inverse document frequency (TF-IDF) approach, these being those linked to the use of tools of simulation in the virtual learning process.",
+      "url": "https://www.semanticscholar.org/paper/0082fb8f738cdc765d8683178322a159eeb0f07b",
+      "keywords": [
+        "student satisfaction",
+        "analysis twitter",
+        "university satisfaction",
+        "sentiment analysis",
+        "nlp supported",
+        "processing nlp",
+        "satisfaction term"
+      ],
+      "cluster": 0,
+      "similarity": 0.39537471532821655
+    },
+    {
+      "title": "Data augmentation in natural language processing: a novel text generation approach for long and short text classifiers",
+      "authors": [
+        "Markus Bayer",
+        "M. Kaufhold",
+        "Björn Buchhold",
+        "Marcel Keller",
+        "J. Dallmeyer",
+        "Christian Reuter"
+      ],
+      "year": 2021,
+      "abstract": "In many cases of machine learning, research suggests that the development of training data might have a higher relevance than the choice and modelling of classifiers themselves. Thus, data augmentation methods have been developed to improve classifiers by artificially created training data. In NLP, there is the challenge of establishing universal rules for text transformations which provide new linguistic patterns. In this paper, we present and evaluate a text generation method suitable to increase the performance of classifiers for long and short texts. We achieved promising improvements when evaluating short as well as long text tasks with the enhancement by our text generation method. Especially with regard to small data analytics, additive accuracy gains of up to 15.53% and 3.56% are achieved within a constructed low data regime, compared to the no augmentation baseline and another data augmentation technique. As the current track of these constructed regimes is not universally applicable, we also show major improvements in several real world low data tasks (up to +4.84 F1-score). Since we are evaluating the method from many perspectives (in total 11 datasets), we also observe situations where the method might not be suitable. We discuss implications and patterns for the successful application of our approach on different types of datasets.",
+      "url": "https://www.semanticscholar.org/paper/00213d44e03dae916860c0512025b5f96c3ee231",
+      "keywords": [
+        "text classifiers",
+        "text generation",
+        "data nlp",
+        "improve classifiers",
+        "nlp challenge",
+        "data augmentation",
+        "enhancement text"
+      ],
+      "cluster": 1,
+      "similarity": 0.39252257347106934
+    },
+    {
+      "title": "Feature Extraction using Lexicon on the Emotion Recognition Dataset of Indonesian Text",
+      "authors": [
+        "Aprilia Nurkasanah",
+        "Mardhiya Hayaty"
+      ],
+      "year": 2022,
+      "abstract": "Text Mining is a part of Neural Language Processing (NLP), also known as text analytics. Text mining includes sentiment analysis and emotion analysis which are often used in analysis on social media, news, or other media in written form. The emotional breakdown is a level of sentiment analysis that categorises text into negative, neutral, and positive sentiments. Emotion is categorized into several classes, In this study, emotion is categorized into 5 classes namely anger, fear, happiness, love, and sadness. This study proposed feature extraction using Lexicon and TF-IDF on the emotion recognition dataset of Indonesian texts. InSet Lexicon Dictionary is used as the corpus in performing the feature extraction. Therefore, InSet Lexicon was chosen as the dictionary to perform feature extraction in this study. The results show that InSet Lexicon has poor performance in feature extraction by showing an accuracy of 30%, while TF-IDF is 62%.",
+      "url": "https://www.semanticscholar.org/paper/00012b94fe9d71237eb9c529d1172c0c51c6ee01",
+      "keywords": [
+        "lexicon emotion",
+        "idf emotion",
+        "indonesian text",
+        "sentiment analysis",
+        "indonesian texts",
+        "emotion analysis",
+        "emotion categorized"
+      ],
+      "cluster": 0,
+      "similarity": 0.39074307680130005
+    },
+    {
+      "title": "The Impact of Natural Language Processing on Literacy Education and Practice",
+      "authors": [
+        "Muljono Muljono",
+        "R. A. Nugroho",
+        "Hanny Haryanto",
+        "K. Saddhono"
+      ],
+      "year": 2024,
+      "abstract": "Natural Language Processing (NLP): NLP has revolutionised many domains in recent years, and literacy learning is one of those areas to have benefitted. Designed as a primer for literacy educators, this paper explores how the rapid developments in NLP are changing traditional pedagogical approaches and improving learning outcomes. This research investigates the integration of naturally processing technology tools in educational frameworks supporting reading, writing and comprehension skills for diverse learner demographics through a systematic review method on current literature and case studies. Automated essay scoring, sentiment analysis and language modelling are innovative tools that employ NLP technologies to evaluate student performance. These resources provide not only instant but also customized responses that are essential to building a richer vocabulary and language comprehension. As an example, automated essay scoring systems speed up the grading process while also provide specific feedback on grammar, coherence and argument structure; so that students can improve their own writing over multiple iterations. This is particularly important when it comes to turn-based and asynchronized learning but difficult for teachers who lack freeware sentiment analysis tools that can provide information on students' levels of emotional engagement with the text itself. Additionally, NLP-fueled reading aids (both native tools and third-party add-ons like text-to-speech or speech-to-text apps) remove obstacles for students with dyslexia who are mastering literacy.",
+      "url": "https://www.semanticscholar.org/paper/007929960641ff7dc65c0e077e4b238efe0c38b0",
+      "keywords": [
+        "essay scoring",
+        "literacy learning",
+        "automated essay",
+        "scoring sentiment",
+        "mastering literacy",
+        "developments nlp",
+        "reading writing"
+      ],
+      "cluster": 0,
+      "similarity": 0.3895109295845032
+    },
+    {
+      "title": "Interactive Spoken Dialog Systems on Bringing Speech and NLP Together in Real Applications",
+      "authors": [
+        "Julia Hirschberg",
+        "C. Kamm",
+        "M. Walker"
+      ],
+      "year": 1997,
+      "abstract": "Welcome to the ACL/EACL Workshop on Interactive Spoken Dialogue Systems. Recent advances in speech technologies, natural language processing, and dialogue modeling have made it possible to build dialogue agents for a wide range of applications from voice dialing to accessing information about the weather, train schedules, cultural events or local restaurants. However, there is little research on the integration of component technologies required for these agents. The purpose of this workshop is to bring together researchers in text-to-speech, ASR, NLP, generation and dialogue modeling as well as people who are building spoken dialogue systems, to address some of the challenges involved in this integration.",
+      "url": "https://www.semanticscholar.org/paper/006db01b2c42baed9ae27e1606107ae0a62f2a7b",
+      "keywords": [
+        "dialogue modeling",
+        "spoken dialog",
+        "dialog systems",
+        "dialogue systems",
+        "dialogue agents",
+        "interactive spoken",
+        "spoken dialogue"
+      ],
+      "cluster": -1,
+      "similarity": 0.3888823986053467
+    },
+    {
+      "title": "EVALITA. Evaluation of NLP and Speech Tools for Italian",
+      "authors": [
+        "Pierpaolo Basile",
+        "Franco Cutugno",
+        "M. Nissim",
+        "V. Patti",
+        "R. Sprugnoli"
+      ],
+      "year": 2016,
+      "abstract": "This paper describes the design and reports the results of two questionnaires. The first of these questionnaires was created to collect information about the interest of industrial companies in the field of Italian text/speech analytics towards the evaluation campaign EVALITA; the second to gather comments and suggestions for the future of the evaluation and of its final workshop from the participants and the organizers of the campaign on the last two editions (2011 and 2014). Novelties introduced in the organization of EVALITA 2016 on the basis of the questionnaires results are also reported.",
+      "url": "https://www.semanticscholar.org/paper/0038e29a09cf1a73d778a0241578a425c9f55eb4",
+      "keywords": [
+        "evaluation nlp",
+        "speech analytics",
+        "speech tools",
+        "evalita evaluation",
+        "text speech",
+        "evaluation campaign",
+        "nlp speech"
+      ],
+      "cluster": -1,
+      "similarity": 0.3865079879760742
+    },
+    {
+      "title": "POS-based Classification and Derivation of Kannada Stop-words using English Parallel Corpus",
+      "authors": [
+        "Prasad Desai",
+        "Jatinderkumar R. Saini",
+        "P. Bafna"
+      ],
+      "year": 2022,
+      "abstract": "For the retrieval of information from different sources and formats, pre-processing of the collected information is the most important task. The process of Stop-Word elimination is one such part of the pre-processing phase. This paper presents, for the first time, the list of stop words, stop stems and stop lemmas for Malayalam language of India. Initially, a corpus of Malayalam languages was created. The total count of words in the corpus was more than 21 million out of which approximately 0.33 million were unique words. This was processed to yield a total of 153 Stop-words. Stemming was possible for 20 words and lemmatization could be done for 25 words only. The final refined stop word list consists of 123 Stop-words. Malayalam is a widely spoken language by people living in India and many other parts of the world. The results presented here are bound to be used by any NLP activity for this language.",
+      "url": "https://www.semanticscholar.org/paper/0017605cd42472c99e624c719eed6ffbc364149b",
+      "keywords": [
+        "corpus malayalam",
+        "words malayalam",
+        "malayalam languages",
+        "malayalam language",
+        "kannada stop",
+        "malayalam",
+        "malayalam widely"
+      ],
+      "cluster": -1,
+      "similarity": 0.3859066069126129
+    },
+    {
+      "title": "Annotated Dataset Creation through General Purpose Language Models for non-English Medical NLP",
+      "authors": [
+        "Johann Frei",
+        "F. Kramer"
+      ],
+      "year": 2022,
+      "abstract": "Obtaining text datasets with semantic annotations is an effortful process, yet crucial for supervised training in natural language processsing (NLP). In general, developing and applying new NLP pipelines in domain-specific contexts for tasks often requires custom designed datasets to address NLP tasks in supervised machine learning fashion. When operating in non-English languages for medical data processing, this exposes several minor and major, interconnected problems such as lack of task-matching datasets as well as task-specific pre-trained models. In our work we suggest to leverage pretrained language models for training data acquisition in order to retrieve sufficiently large datasets for training smaller and more efficient models for use-case specific tasks. To demonstrate the effectiveness of your approach, we create a custom dataset which we use to train a medical NER model for German texts, GPTNERMED, yet our method remains language-independent in principle. Our obtained dataset as well as our pre-trained models are publicly available at: https://github.com/frankkramer-lab/GPTNERMED",
+      "url": "https://www.semanticscholar.org/paper/004455626f641d75d5e85e9f95b11580e77da277",
+      "keywords": [
+        "medical nlp",
+        "nlp pipelines",
+        "nlp tasks",
+        "annotated dataset",
+        "processsing nlp",
+        "semantic annotations",
+        "nlp obtaining"
+      ],
+      "cluster": 2,
+      "similarity": 0.3858180642127991
+    },
+    {
+      "title": "Features matching using natural language processing",
+      "authors": [
+        "Muhammad Danial Khilji"
+      ],
+      "year": 2023,
+      "abstract": "The feature matching is a basic step in matching different datasets. This article proposes shows a new hybrid model of a pretrained Natural Language Processing (NLP) based model called BERT used in parallel with a statistical model based on Jaccard similarity to measure the similarity between list of features from two different datasets. This reduces the time required to search for correlations or manually match each feature from one dataset to another.",
+      "url": "https://www.semanticscholar.org/paper/000be6afb4397b2880c438236756413e9696c2ab",
+      "keywords": [
+        "feature matching",
+        "features matching",
+        "match feature",
+        "processing nlp",
+        "nlp based",
+        "similarity list",
+        "matching using"
+      ],
+      "cluster": -1,
+      "similarity": 0.38377493619918823
+    },
+    {
+      "title": "Open-Ended Questions",
+      "authors": [],
+      "year": 2020,
+      "abstract": "Natural language processing (NLP) is the field of decoding human written language. This chapter responds to the growing interest in using machine learning–based NLP approaches for analyzing open-ended employee survey responses. These techniques address scalability and the ability to provide real-time insights to make qualitative data collection equally or more desirable in organizations. The chapter walks through the evolution of text analytics in industrial–organizational psychology and discusses relevant supervised and unsupervised machine learning NLP methods for survey text data, such as latent Dirichlet allocation, latent semantic analysis, sentiment analysis, word relatedness methods, and so on. The chapter also lays out preprocessing techniques and the trade-offs of growing NLP capabilities internally versus externally, points the readers to available resources, and ends with discussing implications and future directions of these approaches.",
+      "url": "https://www.semanticscholar.org/paper/0040c37c9648b0e7f3f68659335e9f83ce161111",
+      "keywords": [
+        "survey text",
+        "nlp capabilities",
+        "learning nlp",
+        "text analytics",
+        "nlp approaches",
+        "employee survey",
+        "growing nlp"
+      ],
+      "cluster": -1,
+      "similarity": 0.3817479610443115
+    },
+    {
+      "title": "Multi-task Learning for Named Entity Recognition and Intent Classification in Natural Language Understanding Applications",
+      "authors": [
+        "Rizal Setya Perdana",
+        "P. P. Adikara"
+      ],
+      "year": 2025,
+      "abstract": "Background: Understanding human language is a part of the research in Natural Language Processing (NLP) known as Natural Language Understanding (NLU). It becomes a crucial part of some NLP applications such as chatbots, that interpret the user intent and important entities. NLU systems depend on intent classification and named entity recognition (NER) which is crucial for understanding the user input to extract meaningful information. Not only important in chatbots, NLU also provides a pivotal function in other applications for efficient and precise text understanding.\nObjective: The aim of this study is to introduce multitask learning techniques to improve the application's performance on NLU tasks, especially intent classification and NER in specific domains.\nMethods: To achieve the language understanding capability, a strategy is to combine the intent classification and entity recognition tasks by using a shared model based on the shared representation and task dependencies. This approach is known as multitask learning and leverages the collaborative interaction between these related tasks to enhance performance. The proposed learning architecture is designed to be adaptable to various NLU-based applications, but in this work are discussed use cases in chatbots.\nResults: The results show the effectiveness of the proposed approach by following several experiments, both from intent classification and named entity recognitions. The multitask learning capabilities highlight the potential of multi-task learning in chatbot systems for close domains. The optimal hyperparameters consist of a warm-up step of 60, an early stopping probability of 10, a weight decay of 0.001, a Named Entity Recognition (NER) loss weight of 0.58, and an intention classification loss weight of 0.4.\nConclusion: The performance of Dual Intent and Entity Transformer (DIET) for both tasks—intent classification and named entity recognition—is highly dependent on the data. This leads to various capabilities for the hyperparameter combinations. Our proposed model architecture significantly outperforms previous studies based on common evaluation metrics.\nKeywords: Natural Language Understanding, Chatbot, Multi-task Learning, Named Entity Recognition",
+      "url": "https://www.semanticscholar.org/paper/005f4c5a0b371c2987c1ad060a1711131fcdd77c",
+      "keywords": [
+        "multitask learning",
+        "known multitask",
+        "recognitions multitask",
+        "introduce multitask",
+        "chatbots nlu",
+        "intent classification",
+        "multitask"
+      ],
+      "cluster": -1,
+      "similarity": 0.3748353123664856
+    },
+    {
+      "title": "Group Discussion Analysis and Digression Intervention",
+      "authors": [
+        "Sahiti Cheguru",
+        "Vijayalata Y"
+      ],
+      "year": 2021,
+      "abstract": "It is in common knowledge that reading is one of the richest sources of knowledge in this world. Reading empowers you with the light that leads you through the dark. Therefore, we attempt to promote this valuable skill with this study. In this paper, a platform is developed that facilitates the exchange of thoughts and information among students. We have leveraged NLP to develop this application and categorize texts into various categories. Further, various text classification methods are introduced to derive meaningful insights from written communication among students regarding books. We go on to apply the information drawn from text classification to a technology that engages readers through interactive games and discussions, IMapbook. The conversational text acquired through these discussions is further classified into various categories based on the context. Here, we aim to build a classifier that can predict these categories. Our study shows that the fine-tuned BERT, outperforms all the other methods used in this research.",
+      "url": "https://www.semanticscholar.org/paper/004e31873468b92214b2c752eabae1313d24f61c",
+      "keywords": [
+        "categorize texts",
+        "conversational text",
+        "text classification",
+        "imapbook conversational",
+        "discussion analysis",
+        "discussions imapbook",
+        "group discussion"
+      ],
+      "cluster": 0,
+      "similarity": 0.3717902600765228
+    },
+    {
+      "title": "Exploring the Impact of Transliteration on NLP Performance for Low-Resource Languages: The Case of Maltese and Arabic",
+      "authors": [
+        "Kurt Micallef",
+        "Fadhl Eryani",
+        "Houda Bouamor",
+        "Claudia Borg"
+      ],
+      "year": 2023,
+      "abstract": "Maltese is a low-resource language of Arabic and Romance origins written in Latin script. We explore the impact of transliterating Maltese into Arabic script on a number of downstream tasks. We compare multiple transliteration pipelines ranging from simple one-to-one character maps to more sophisticated alternatives that explore multiple possibilities or make use of manual linguistic annotations. We show that the sophisticated systems are consistently better than simpler systems, quantitatively and qualitatively. We also show transliterating Maltese can be considered as an option to improve the cross-lingual transfer capabilities.",
+      "url": "https://www.semanticscholar.org/paper/001b3fa593710271ff26919b57dbb0101c462b2a",
+      "keywords": [
+        "transliteration nlp",
+        "transliteration pipelines",
+        "transliterating maltese",
+        "qualitatively transliterating",
+        "transliterating",
+        "transliteration",
+        "multiple transliteration"
+      ],
+      "cluster": -1,
+      "similarity": 0.3711435794830322
+    },
+    {
+      "title": "Linguistic and emotional dynamics in satirical vs. real news: a psycholinguistic analysis",
+      "authors": [
+        "Gabriela Wick-Pedro",
+        "Roney Lira de Sales Santos",
+        "O. Vale"
+      ],
+      "year": 2024,
+      "abstract": "This study compares the psycholinguistic differences between satirical and real news using data from LIWC (Linguistic Inquiry and Word Count). We found that satirical news utilizes a broader range of emotional and rhetorical resources, often exaggerating or subverting reality, while real news maintains a more factual and objective tone. This highlights the critical and humorous role of satire in social communication. Furthermore, the research advances the field of NLP by improving satire detection through a psycholinguistic lens, contributing to the development of algorithms that effectively differentiate satirical news from fake news and help combat misinformation.",
+      "url": "https://www.semanticscholar.org/paper/006cfda19d3174b3c45c710e23967cae39fb2656",
+      "keywords": [
+        "satire detection",
+        "satirical news",
+        "satirical vs",
+        "differentiate satirical",
+        "count satirical",
+        "improving satire",
+        "satirical real"
+      ],
+      "cluster": -1,
+      "similarity": 0.37097999453544617
+    },
+    {
+      "title": "On the Origins of Bias in NLP through the Lens of the Jim Code",
+      "authors": [
+        "Fatma Elsafoury",
+        "Gavin Abercrombie"
+      ],
+      "year": 2023,
+      "abstract": "In this paper, we trace the biases in current natural language processing (NLP) models back to their origins in racism, sexism, and homophobia over the last 500 years. We review literature from critical race theory, gender studies, data ethics, and digital humanities studies, and summarize the origins of bias in NLP models from these social science perspective. We show how the causes of the biases in the NLP pipeline are rooted in social issues. Finally, we argue that the only way to fix the bias and unfairness in NLP is by addressing the social problems that caused them in the first place and by incorporating social sciences and social scientists in efforts to mitigate bias in NLP models. We provide actionable recommendations for the NLP research community to do so.",
+      "url": "https://www.semanticscholar.org/paper/0054647fe6d0eadb5273e546f54c256e9047e4c8",
+      "keywords": [
+        "biases nlp",
+        "bias nlp",
+        "unfairness nlp",
+        "bias unfairness",
+        "nlp research",
+        "nlp",
+        "nlp pipeline"
+      ],
+      "cluster": -1,
+      "similarity": 0.35985612869262695
+    },
+    {
+      "title": "EMNLP versus ACL: Analyzing NLP research over time",
+      "authors": [
+        "Sujatha Das Gollapalli",
+        "X. Li"
+      ],
+      "year": 2015,
+      "abstract": "The conferences ACL (Association for Computational Linguistics) and EMNLP (Empirical Methods in Natural Language Processing) rank among the premier venues that track the research developments in Natural Language Processing and Computational Linguistics. In this paper, we present a study on the research papers of approximately two decades from these two NLP conferences. We apply keyphrase extraction and corpus analysis tools to the proceedings from these venues and propose probabilistic and vector-based representations to represent the topics published in a venue for a given year. Next, similarity metrics are studied over pairs of venue representations to capture the progress of the two venues with respect to each other and over time.",
+      "url": "https://www.semanticscholar.org/paper/0025b0c655e678688ebd204b24f4d1be8490bdbc",
+      "keywords": [
+        "nlp research",
+        "analyzing nlp",
+        "nlp conferences",
+        "keyphrase extraction",
+        "decades nlp",
+        "linguistics emnlp",
+        "nlp"
+      ],
+      "cluster": 2,
+      "similarity": 0.35944414138793945
+    },
+    {
+      "title": "Formation of Communicative Competence of Elementary School Students on the Basis of Psycholinguistics",
+      "authors": [
+        "S. Yavorskaya",
+        "Lesia Poriadchenko"
+      ],
+      "year": 2019,
+      "abstract": "The article deals with theoretical analysis of the problem of forming the communicative competence of elementary school students on the basis of psycholinguistics − on one of its technologies − the technology of neurolinguistic programming. The theoretical analysis of the features of the technology of neurolinguistic programming is carried out and the practice of their use in the educational process of the versatile formation of the younger generation is presented. Much attention is paid to the idea that the use of technologies of neurolinguistic programming in the process of forming the communicative competence of primary school students (taking into account the leading sensor channel of listeners, adjusting, reframing) will contribute to formation of expressiveness of studentsʼ speech, their cultural and linguistic enrichment. The role of linguistic means in the achievement of the stated goals of speech expression is presented. It is suggested that the inclusion in the educational process of representative systems (auditory, visual, kinestetic and digital), on the basis of which the perception and reproduction of the information takes place by the person, will allow primary school teachers to improve the state of formation of communicative competence of junior pupils. The results of the experimental study confirm the assumptions made about the feasibility of using NLP technologies in the process of forming the culture of communication of the younger generation.",
+      "url": "https://www.semanticscholar.org/paper/006404c2242a29b3de10f92ccf9f6bb6698cd442",
+      "keywords": [
+        "psycholinguistics technologies",
+        "forming communicative",
+        "communicative competence",
+        "neurolinguistic programming",
+        "psycholinguistics",
+        "communicative",
+        "technologies neurolinguistic"
+      ],
+      "cluster": -1,
+      "similarity": 0.3585275411605835
+    },
+    {
+      "title": "FICOBU: Filipino WordNet Construction Using Decision Tree and Language Modeling",
+      "authors": [
+        "R. Sagum",
+        "A. D. Ramos",
+        "Monique T. Llanes"
+      ],
+      "year": 2019,
+      "abstract": " Abstract —The paper discusses the approach in creating a Filipino WordNet. A semi-supervised learning approach using Decision Tree and Language Modeling. This will take advantage on the information found on the web. It will help future NLP researchers in Filipino language. The approach uses words from a dictionary as preliminary data and as seed for the search engine to start crawling the WWW. To decide if the word is part of Filipino language, the word will first undergo in Code-Switching Points Module (CSPD). CSPD scores the word by using the frequency counts of word bigrams and unigrams from language models which were trained from an existing and available corpus. After scoring, Filipino Stemmer will get the stem of the word and examine if the stem word is part of the said language. Once the words were scored and stemmed, the archive will evaluate if the word is Filipino. To test the accuracy of the system, we collected different articles around the web and then grouped it into two groups — Plain Filipino and Bilingual. The result shows the F-measure for Plain Filipino Category range between 65.65% - 96.85% with an average of 85.64% while for Bilingual range between 60% - 100% with an average of 88.17%.",
+      "url": "https://www.semanticscholar.org/paper/008d2d881e5f5d19572a6b5dcb2f0cbaa2e3deba",
+      "keywords": [
+        "filipino wordnet",
+        "filipino language",
+        "filipino category",
+        "word filipino",
+        "filipino bilingual",
+        "scoring filipino",
+        "corpus scoring"
+      ],
+      "cluster": -1,
+      "similarity": 0.3579508066177368
+    },
+    {
+      "title": "Text to SQL Query",
+      "authors": [
+        "Kartik Sharma"
+      ],
+      "year": 2025,
+      "abstract": "With the exponential growth of data in modern organizations, the ability to extract meaningful insights from databases\nhas become crucial. However, interacting with structured databases often requires knowledge of SQL (Structured Query\nLanguage), which presents a barrier for non-technical users. To address this challenge, this project proposes a Text to SQL\nsystem that enables users to retrieve data from relational databases by simply expressing their queries in natural language. The\ngoal is to bridge the gap between human language and machine-readable SQL commands through the use of Natural Language\nProcessing (NLP) and machine learning techniques.\nThe system is designed to accept a natural language input, process and understand its intent, and then convert it into an\nequivalent SQL query that can be executed on a target database. The core methodology involves text preprocessing, tokenization,\nsemantic parsing, and SQL query generation. Modern NLP models, including transformer-based architectures, are explored to\nimprove the understanding of context and the mapping between language and database schema.",
+      "url": "https://www.semanticscholar.org/paper/0044d49507798bc7725831c1a27ee8a0b009e07c",
+      "keywords": [
+        "parsing sql",
+        "text sql",
+        "query language",
+        "sql structured",
+        "readable sql",
+        "expressing queries",
+        "query generation"
+      ],
+      "cluster": -1,
+      "similarity": 0.3576018512248993
+    },
+    {
+      "title": "Optimus: Organizing Sentences via Pre-trained Modeling of a Latent Space",
+      "authors": [
+        "Chunyuan Li",
+        "Xiang Gao",
+        "Yuan Li",
+        "Xiujun Li",
+        "Baolin Peng",
+        "Yizhe Zhang",
+        "Jianfeng Gao"
+      ],
+      "year": 2020,
+      "abstract": "When trained effectively, the Variational Autoencoder (VAE) can be both a powerful generative model and an effective representation learning framework for natural language. In this paper, we propose the first large-scale language VAE model, Optimus. A universal latent embedding space for sentences is first pre-trained on large text corpus, and then fine-tuned for various language generation and understanding tasks. Compared with GPT-2, Optimus enables guided language generation from an abstract level using the latent vectors. Compared with BERT, Optimus can generalize better on low-resource language understanding tasks due to the smooth latent space structure. Extensive experimental results on a wide range of language tasks demonstrate the effectiveness of Optimus. It achieves new state-of-the-art on VAE language modeling benchmarks. We hope that our first pre-trained big VAE language model itself and results can help the NLP community renew the interests of deep generative models in the era of large-scale pre-training, and make these principled methods more practical.",
+      "url": "https://www.semanticscholar.org/paper/00696ba295d66f049d70272219f7fea4266171be",
+      "keywords": [
+        "variational autoencoder",
+        "deep generative",
+        "latent embedding",
+        "autoencoder vae",
+        "autoencoder",
+        "organizing sentences",
+        "language modeling"
+      ],
+      "cluster": 1,
+      "similarity": 0.35733339190483093
+    },
+    {
+      "title": "Natural language processing for analyzing online customer reviews: a survey, taxonomy, and open research challenges",
+      "authors": [
+        "Nadia Malik",
+        "M. Bilal"
+      ],
+      "year": 2024,
+      "abstract": "In recent years, e-commerce platforms have become popular and transformed the way people buy and sell goods. People are rapidly adopting Internet shopping due to the convenience of purchasing from the comfort of their homes. Online review sites allow customers to share their thoughts on products and services. Customers and businesses increasingly rely on online reviews to assess and improve the quality of products. Existing literature uses natural language processing (NLP) to analyze customer reviews for different applications. Due to the growing importance of NLP for online customer reviews, this study attempts to provide a taxonomy of NLP applications based on existing literature. This study also examined emerging methods, data sources, and research challenges by reviewing 154 publications from 2013 to 2023 that explore state-of-the-art approaches for diverse applications. Based on existing research, the taxonomy of applications divides literature into five categories: sentiment analysis and opinion mining, review analysis and management, customer experience and satisfaction, user profiling, and marketing and reputation management. It is interesting to note that the majority of existing research relies on Amazon user reviews. Additionally, recent research has encouraged the use of advanced techniques like bidirectional encoder representations from transformers (BERT), long short-term memory (LSTM), and ensemble classifiers. The rising number of articles published each year indicates increasing interest of researchers and continued growth. This survey also addresses open issues, providing future directions in analyzing online customer reviews.",
+      "url": "https://www.semanticscholar.org/paper/0055534622ed5768896a40a8e7b799f6a814eb4f",
+      "keywords": [
+        "customer reviews",
+        "user reviews",
+        "nlp applications",
+        "nlp online",
+        "online reviews",
+        "nlp analyze",
+        "opinion mining"
+      ],
+      "cluster": 0,
+      "similarity": 0.35626018047332764
+    },
+    {
+      "title": "Spatio-temporal Storytelling? Leveraging Generative Models for Semantic Trajectory Analysis",
+      "authors": [
+        "Shreya Ghosh",
+        "Saptarshi Sengupta",
+        "P. Mitra"
+      ],
+      "year": 2023,
+      "abstract": "In this paper, we lay out a vision for analysing semantic trajectory traces and generating synthetic semantic trajectory data (SSTs) using generative language model. Leveraging the advancements in deep learning, as evident by progress in the field of natural language processing (NLP), computer vision, etc. we intend to create intelligent models that can study the semantic trajectories in various contexts, predicting future trends, increasing machine understanding of the movement of animals, humans, goods, etc. enhancing human-computer interactions, and contributing to an array of applications ranging from urban-planning to personalized recommendation engines and business strategy.",
+      "url": "https://www.semanticscholar.org/paper/008c33ad39a6a4f02f7bafec2618da1bcd2d4453",
+      "keywords": [
+        "semantic trajectory",
+        "semantic trajectories",
+        "trajectories",
+        "temporal storytelling",
+        "trajectories various",
+        "trajectory traces",
+        "trajectory data"
+      ],
+      "cluster": -1,
+      "similarity": 0.3505476117134094
+    },
+    {
+      "title": "Elevating Code-mixed Text Handling through Auditory Information of Words",
+      "authors": [
+        "Mamta Mamta",
+        "Zishan Ahmad",
+        "Asif Ekbal"
+      ],
+      "year": 2023,
+      "abstract": "With the growing popularity of code-mixed data, there is an increasing need for better handling of this type of data, which poses a number of challenges, such as dealing with spelling variations, multiple languages, different scripts, and a lack of resources. Current language models face difficulty in effectively handling code-mixed data as they primarily focus on the semantic representation of words and ignore the auditory phonetic features. This leads to difficulties in handling spelling variations in code-mixed text. In this paper, we propose an effective approach for creating language models for handling code-mixed textual data using auditory information of words from SOUNDEX. Our approach includes a pre-training step based on masked-language-modelling, which includes SOUNDEX representations (SAMLM) and a new method of providing input data to the pre-trained model. Through experimentation on various code-mixed datasets (of different languages) for sentiment, offensive and aggression classification tasks, we establish that our novel language modeling approach (SAMLM) results in improved robustness towards adversarial attacks on code-mixed classification tasks. Additionally, our SAMLM based approach also results in better classification results over the popular baselines for code-mixed tasks. We use the explainability technique, SHAP (SHapley Additive exPlanations) to explain how the auditory features incorporated through SAMLM assist the model to handle the code-mixed text effectively and increase robustness against adversarial attacks \\footnote{Source code has been made available on \\url{https://github.com/20118/DefenseWithPhonetics}, \\url{https://www.iitp.ac.in/~ai-nlp-ml/resources.html\\#Phonetics}}.",
+      "url": "https://www.semanticscholar.org/paper/0034396222b49bdc8749f94a0d2cd4fc8b1d429b",
+      "keywords": [
+        "masked language",
+        "auditory phonetic",
+        "words soundex",
+        "phonetic features",
+        "language modelling",
+        "soundex representations",
+        "language modeling"
+      ],
+      "cluster": 1,
+      "similarity": 0.3502744734287262
+    },
+    {
+      "title": "Developing a Comprehensive NLP Framework for Indigenous Dialect Documentation and Revitalization",
+      "authors": [
+        "Mohammed Fakhreldin"
+      ],
+      "year": 2025,
+      "abstract": "—The disappearance of Indigenous languages results in a decrease in cultural diversity, hence making the preservation of these languages extremely important. Conventional methods of documentation are lengthy, and the present AI solutions somehow do not deliver due to data scarcity, dialectal variation, and poor adaptability to low-resource languages. A novel NLP framework is being proposed to solve the existing problems. This framework intermixes Meta-Learning and Contrastive Learning to counter these problems. Thus, adaptation to low-resourced languages becomes rapid via meta-learning (MAML), while dialect differentiation is enhanced through contrastive learning. The model training is carried out on Tatoeba (text) and Mozilla Common Voice (speech) datasets to ensure robust performance in both text and phonetic tasks. The results indicate that there is a reduction of 15% in Word Error Rate (WER), an 18% improvement in BLEU score corresponding to translation, and a 12% improvement in F1-score related to dialect classification. The testing was also done with native speakers to assess its practical viability. It is a real-time translation, transcription, and language documentation system deployed via a cloud-based platform, thereby reaching out to Indigenous communities globally. This dual-learning framework represents a scalable, adaptive, and cost-efficient solution for the revitalization of languages. The models proposed have been a game changer for language preservation, have set new standards for low-resource NLP, and have made some tangible contributions towards the digital sustainability of endangered dialects.",
+      "url": "https://www.semanticscholar.org/paper/0065d06c7badb69817c978b2ef3c1ae678022ac8",
+      "keywords": [
+        "language preservation",
+        "indigenous dialect",
+        "dialect documentation",
+        "indigenous languages",
+        "resource nlp",
+        "dialect classification",
+        "learning contrastive"
+      ],
+      "cluster": -1,
+      "similarity": 0.34969860315322876
+    },
+    {
+      "title": "StanceEval 2024: The First Arabic Stance Detection Shared Task",
+      "authors": [
+        "N. Alturayeif",
+        "Hamzah Luqman",
+        "Zaid Alyafeai",
+        "Asma Yamani"
+      ],
+      "year": 2024,
+      "abstract": "Recently, there has been a growing interest in analyzing user-generated text to understand opinions expressed on social media. In NLP, this task is known as stance detection, where the goal is to predict whether the writer is in favor, against, or has no opinion on a given topic. Stance detection is crucial for applications such as sentiment analysis, opinion mining, and social media monitoring, as it helps in capturing the nuanced perspectives of users on various subjects. As part of the ArabicNLP 2024 program, we organized the first shared task on Arabic Stance Detection, StanceEval 2024. This initiative aimed to foster advancements in stance detection for the Arabic language, a relatively underrepresented area in Arabic NLP research. This overview paper provides a detailed description of the shared task, covering the dataset, the methodologies used by various teams, and a summary of the results from all participants. We received 28 unique team registrations, and during the testing phase, 16 teams submitted valid entries. The highest classification F-score obtained was 84.38.",
+      "url": "https://www.semanticscholar.org/paper/004faac0cab5ae4bd5cb9e4ae2e90f3927f117be",
+      "keywords": [
+        "arabic stance",
+        "arabic nlp",
+        "detection stanceeval",
+        "stance detection",
+        "opinion mining",
+        "sentiment analysis",
+        "detection arabic"
+      ],
+      "cluster": 0,
+      "similarity": 0.34943288564682007
+    },
+    {
+      "title": "Solving Arithmetic Word Problems by Object Oriented Modeling and Query-Based Information Processing",
+      "authors": [
+        "Sourav Mandal",
+        "S. Naskar"
+      ],
+      "year": 2019,
+      "abstract": "The paper presents an Object Oriented Analysis and Design (OOAD) approach to modeling, reasoning and a database query based approach to processing and solving addition-subtraction (Add-Sub) type arithmetic Mathematical Word Problems (MWP) of elementary school level. The system identifies and extracts the key entities in a word problem like owners, items and their attributes and quantities, verbs, from all the input sentences, using a rule based Information Extraction (IE) approach based on Semantic Role Labeling (SRL) technique. These information are then stored in predefined templates which are further modeled to represent an MWP in the object-oriented paradigm and processed using query based approach to generate the answer. These kind of applications are based on Natural Language Processing (NLP), Natural Language Understanding (NLU) and Artificial Intelligence (AI), and can be used as intelligent dynamic mathematical tutoring tools as part of E-Learning systems, Learning Management Systems, on-line education, etc. The proposed object oriented mathematical word problem solver can solve arithmetic MWPs involving only addition-subtraction operations and it has produced an accuracy of 94.35% on a subset of the AI2 arithmetic questions dataset.",
+      "url": "https://www.semanticscholar.org/paper/001b04a1bc2d1d8fe65083a4759dc29961c9ca28",
+      "keywords": [
+        "processing nlp",
+        "language processing",
+        "reasoning database",
+        "query based",
+        "processing solving",
+        "modeling reasoning",
+        "object oriented"
+      ],
+      "cluster": -1,
+      "similarity": 0.348712295293808
+    },
+    {
+      "title": "Bolstering Advance Care Planning Measurement Using Natural Language Processing.",
+      "authors": [
+        "S. Zupanc",
+        "Brigitte N. Durieux",
+        "Anne M Walling",
+        "C. Lindvall"
+      ],
+      "year": 2024,
+      "abstract": "Despite its growth as a clinical activity and research topic, the complex dynamic nature of advance care planning (ACP) has posed serious challenges for researchers hoping to quantitatively measure it. Methods for measurement have traditionally depended on lengthy manual chart abstractions or static documents (e.g., advance directive forms) even though completion of such documents is only one aspect of ACP. Natural language processing (NLP), in the form of an assisted electronic health record (EHR) review, is a technological advancement that may help researchers better measure ACP activity. In this article, we aim to show how NLP-assisted EHR review supports more accurate and robust measurement of ACP. We do so by presenting three example applications that illustrate how using NLP for this purpose supports (1) measurement in research, (2) detailed insights into ACP in quality improvement, and (3) identification of current limitations of ACP in clinical settings.",
+      "url": "https://www.semanticscholar.org/paper/0046c3c1ddfec3ecbdfc5862e500d0ae3a073aed",
+      "keywords": [
+        "assisted ehr",
+        "nlp assisted",
+        "ehr review",
+        "nlp purpose",
+        "processing nlp",
+        "using nlp",
+        "nlp form"
+      ],
+      "cluster": 2,
+      "similarity": 0.3394400179386139
+    },
+    {
+      "title": "Sentiment Analysis of English Movie Reviews using Deep Learning",
+      "authors": [
+        "Yu‐Ting Niu"
+      ],
+      "year": 2024,
+      "abstract": "As an essential research direction in Natural Language Processing (NLP), Sentiment analysis technology aims to identify and classify emotional tendencies in text data automatically. This study proposes a simplified version of a movie review sentiment analysis model. The model is designed to reduce dependence on computational resources, making it more suitable for edge computing environments. The study draws on the basic architecture and techniques of deep learning models from the image processing field to achieve this goal, creating a more straightforward yet still powerful structure. The model primarily comprises convolutional and fully connected layers, maintaining efficient data processing capability even in situations with limited computational resources. Experimental results indicate that, despite its simplified structure, the proposed sentiment analysis model performs exceptionally in processing large volumes of online review data. Specifically, the model achieves an accuracy rate of 87%, significantly reducing computational costs and providing a new pathway for implementing sentiment analysis quickly and effectively in environments with limited computational resources.",
+      "url": "https://www.semanticscholar.org/paper/004522ef3c61b1892e5ec42e4c7bfa0cb3d5b01c",
+      "keywords": [
+        "implementing sentiment",
+        "nlp sentiment",
+        "sentiment analysis",
+        "review sentiment",
+        "deep learning",
+        "sentiment",
+        "movie reviews"
+      ],
+      "cluster": 0,
+      "similarity": 0.33932238817214966
+    },
+    {
+      "title": "Constructing a Testbed for Psychometric Natural Language Processing",
+      "authors": [
+        "A. Abbasi",
+        "David G. Dobolyi",
+        "Richard G. Netemeyer"
+      ],
+      "year": 2020,
+      "abstract": "Psychometric measures of ability, attitudes, perceptions, and beliefs are crucial for understanding user behaviors in various contexts including health, security, e-commerce, and finance. Traditionally, psychometric dimensions have been measured and collected using survey-based methods. Inferring such constructs from user-generated text could afford opportunities for timely, unobtrusive, collection and analysis. In this paper, we describe our efforts to construct a corpus for psychometric natural language processing (NLP). We discuss our multi-step process to align user text with their survey-based response items and provide an overview of the resulting testbed which encompasses survey-based psychometric measures and accompanying user-generated text from over 8,500 respondents. We report preliminary results on the use of the text to categorize/predict users' survey response labels. We also discuss the important implications of our work and resulting testbed for future psychometric NLP research.",
+      "url": "https://www.semanticscholar.org/paper/005bfafd2cbcfde258183c17b47e740e70f713fc",
+      "keywords": [
+        "psychometric nlp",
+        "text survey",
+        "testbed psychometric",
+        "corpus psychometric",
+        "users survey",
+        "survey response",
+        "natural language"
+      ],
+      "cluster": 0,
+      "similarity": 0.33831968903541565
+    },
+    {
+      "title": "Multimodal Language Analysis in the Wild: CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph",
+      "authors": [
+        "Amir Zadeh",
+        "Paul Pu Liang",
+        "Soujanya Poria",
+        "E. Cambria",
+        "Louis-philippe Morency"
+      ],
+      "year": 2018,
+      "abstract": "Analyzing human multimodal language is an emerging area of research in NLP. Intrinsically this language is multimodal (heterogeneous), sequential and asynchronous; it consists of the language (words), visual (expressions) and acoustic (paralinguistic) modalities all in the form of asynchronous coordinated sequences. From a resource perspective, there is a genuine need for large scale datasets that allow for in-depth studies of this form of language. In this paper we introduce CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI), the largest dataset of sentiment analysis and emotion recognition to date. Using data from CMU-MOSEI and a novel multimodal fusion technique called the Dynamic Fusion Graph (DFG), we conduct experimentation to exploit how modalities interact with each other in human multimodal language. Unlike previously proposed fusion techniques, DFG is highly interpretable and achieves competative performance when compared to the previous state of the art.",
+      "url": "https://www.semanticscholar.org/paper/006fdeff6e1a81c404317ee4056d6cc72f9c0e50",
+      "keywords": [
+        "multimodal language",
+        "language multimodal",
+        "multimodal fusion",
+        "multimodal",
+        "multimodal opinion",
+        "human multimodal",
+        "sentiment emotion"
+      ],
+      "cluster": 0,
+      "similarity": 0.3381953239440918
+    },
+    {
+      "title": "Exploring Neuro-Linguistic programming (NLP) Techniques for Reducing Public Speaking Anxiety: A Study of Practitioner Approaches during Training",
+      "authors": [
+        "Robing Robing",
+        "Eska Dirga",
+        "Ariandi Zulkarnain"
+      ],
+      "year": 2022,
+      "abstract": "The application of Neuro-Linguistic Programming (NLP) techniques has garnered attention as a prospective method for mitigating speaking anxiety in public. This research investigates the utilisation of neuro-linguistic programming (NLP) techniques by a proficient instructor within the framework of the 'Art of Public Speaking' training program, with the primary objective of alleviating the anxiety linked to delivering speeches to a public audience. \nThe current study was conducted at Cita Dines Hotel Makassar on August 4th, 2022. The methodology employed in this study encompassed a thorough gathering of data, which was achieved by actively participating as a trainer assistant, employing observational techniques, conducting detailed interviews, and carefully documenting the training sessions. \nThe collected data underwent a rigorous analytical process guided by Burn's theory on Neuro linguistic Programming. This theoretical framework encompasses various strategies, such as rapport, Flexibility, Outcomes and VAKOG model (Visual, Auditory, Kinesthetic, Olfactory, Gustatory).  \nThe proficient incorporation of these NLP tactics by the trainer not only emphasised their importance but also demonstrated their efficacy in improving the quality of training sessions and promoting meaningful interpersonal connections. This study provides insights into the practical implementation of neuro linguistic programming (NLP) techniques and their capacity to improve the difficulties commonly encountered in public speaking.",
+      "url": "https://www.semanticscholar.org/paper/005c3d5a947abe1544e74a6369ae12d1fd56bed0",
+      "keywords": [
+        "speaking anxiety",
+        "speaking training",
+        "neuro linguistic",
+        "mitigating speaking",
+        "linguistic programming",
+        "public speaking",
+        "anxiety study"
+      ],
+      "cluster": -1,
+      "similarity": 0.3361048102378845
+    },
+    {
+      "title": "Method and Apparatus for Stock Performance Prediction Using Momentum Strategy along with Social Feedback",
+      "authors": [
+        "Vishu Agarwal",
+        "Madhusudan L",
+        "HarshaVardhan Babu Namburi"
+      ],
+      "year": 2022,
+      "abstract": "Stock prediction and historical stock data analysis have been of great interest over the decades. The research is wide from classical deterministic algorithms to machine learning models and techniques along with the supply huge amounts of historical data. Volatility and Market Sentiment are key parameters to account for during the construction of any stock prediction model. Commonly used techniques like the n-moving days average is not responsive to swings in the stocks and the information sent and posted online has made a huge effect on investors' opinions on the market, making these the two optimal parameters of prediction. Hence, we present an automatic pipeline that has 2 modules - N-Observation period momentum strategy to identify potential stocks and then a stock holding module that identifies market sentiment using NLP techniques.",
+      "url": "https://www.semanticscholar.org/paper/003c07933c98790b22c3747af2d8fbd6d9a7b73c",
+      "keywords": [
+        "stock prediction",
+        "market sentiment",
+        "stocks information",
+        "stock performance",
+        "stock data",
+        "stock holding",
+        "stocks stock"
+      ],
+      "cluster": 0,
+      "similarity": 0.33315905928611755
+    },
+    {
+      "title": "Pengaruh Jenis Stemmer Terhadap Algoritma Svm Pada Analisis Sentimen Berbasis Lexicon Dengan Afinn Lexicon Resource",
+      "authors": [
+        "Luthfil Huda",
+        "Andi Sunyoto",
+        "Kusnawi Kusnawi"
+      ],
+      "year": 2024,
+      "abstract": "Analisis sentimen merupakan bidang ilmu yang memiliki potensi besar dalam penelitian dan aplikasi praktis. Ini merupakan sebuah tugas dari NLP yang dieksploitasi untuk mengekstraksi dan mengklasifikasi konten berdasarkan sentimen emosi baik positive, negative dan netral. Analisis sentimen sendiri dibagi menjadi tiga teknik: teknik berbasis leksikon (lexicon-based), teknik berbasis machine learning (machine learning-based), dan teknik hybrid-based. Penelitian ini mengangkat teknik hybrid-based. Penelitian ini befokus untuk menemukan jenis stemmer yang dapat meningkatkan performa dari algoritma SVM pada analisis sentimen berbasis lexicon. Penelitian ini menerapkan tiga jenis stemmer yang berbeda yakni porter stemmer, snowball stemmer, dan Lancaster stemmer. Kemudian menggunakan AFINN lexicon dictionary. Terakhir algoritma SVM akan dievaluasi menggunakan confusion matrix. Penelitian ini melakukan tiga skenario, yakni gabungan antara jenis stemmer yang digunakan dengan algoritma SVM. Dari ketiga skenario yang dilakukan, gabungan SVM dan Snowball stemmer mendapatkan nilai Accuracy, Precision, Recall dan F1-Score paling tinggi dari dua skenario lainnya. Yakni dengan nilai Accuracy sebesar 95,67 %, Precision sebesar 95,68 %, Recall sebesar 95,67 % dan F1-Score sebesar 95,67 %.",
+      "url": "https://www.semanticscholar.org/paper/006b800f613468a7c0c240dba7339ec8ec97e758",
+      "keywords": [
+        "lexicon based",
+        "lexicon penelitian",
+        "lexicon dengan",
+        "mengekstraksi dan",
+        "mengklasifikasi konten",
+        "lexicon dictionary",
+        "leksikon lexicon"
+      ],
+      "cluster": -1,
+      "similarity": 0.3327805995941162
+    },
+    {
+      "title": "Explaining and Improving BERT Performance on Lexical Semantic Change Detection",
+      "authors": [
+        "Severin Laicher",
+        "Sinan Kurtyigit",
+        "Dominik Schlechtweg",
+        "Jonas Kuhn",
+        "Sabine Schulte im Walde"
+      ],
+      "year": 2021,
+      "abstract": "Type- and token-based embedding architectures are still competing in lexical semantic change detection. The recent success of type-based models in SemEval-2020 Task 1 has raised the question why the success of token-based models on a variety of other NLP tasks does not translate to our field. We investigate the influence of a range of variables on clusterings of BERT vectors and show that its low performance is largely due to orthographic information on the target word, which is encoded even in the higher layers of BERT representations. By reducing the influence of orthography we considerably improve BERT’s performance.",
+      "url": "https://www.semanticscholar.org/paper/000a54db4a891bd053c3b119468405f799517100",
+      "keywords": [
+        "improving bert",
+        "clusterings bert",
+        "semantic change",
+        "bert representations",
+        "bert vectors",
+        "bert performance",
+        "improve bert"
+      ],
+      "cluster": 1,
+      "similarity": 0.3272983431816101
+    },
+    {
+      "title": "Comprehension of Contextual Semantics Across Clinical Healthcare Domains",
+      "authors": [
+        "Kurt Miller"
+      ],
+      "year": 2022,
+      "abstract": "The widespread lack of adoption of clinical notetaking standards has rendered information retrieval from Electronic Health Records (EHRs) especially challenging using traditional Natural Language Processing (NLP) techniques. Clinical note authors too commonly adopt their own note-taking structures and styles, limiting the applicability of rule-based and statistical models. While the context of any given sentence within a note carries important implied information, context is notoriously difficult for a language model to infer. However, recent advances in deep learning NLP methods such as pre-training on domain-specific corpora, novel embedding structures, and transformer architectures have enabled an awareness of context not previously attainable. In this work, I study the application of these evidenced NLP approaches to a gold standard annotated corpus of primary care notes of multiple Mayo Clinic EHR systems. The strongly labelled data will be supplemented with large volumes of weakly labelled data curated using distant supervision. The combined dataset will be used to train and evaluate context classification and section boundary detection models that classify the current context of a sentence given adjacent text segments. Once validated against primary care corpora, transfer learning methods will enable access to shared knowledge across more specific clinical domains, enabling generalizability across clinical domains and a degree of transparency into the shared aspects of the integrated model.",
+      "url": "https://www.semanticscholar.org/paper/0067521525564c7b131f0ca4ca0e69590ce82bdd",
+      "keywords": [
+        "learning nlp",
+        "annotated corpus",
+        "contextual semantics",
+        "processing nlp",
+        "clinical notetaking",
+        "nlp approaches",
+        "nlp techniques"
+      ],
+      "cluster": 2,
+      "similarity": 0.3252928853034973
+    },
+    {
+      "title": "Can Modern NLP Systems Reliably Annotate Chest Radiography Exams? A Pre-Purchase Evaluation and Comparative Study of Solutions from AWS, Google, Azure, John Snow Labs, and Open-Source Models on an Independent Pediatric Dataset",
+      "authors": [
+        "Shruti Hegde",
+        "Mabon Ninan",
+        "Jonathan R. Dillman",
+        "S. Hayatghaibi",
+        "Lynn Babcock",
+        "E. Somasundaram"
+      ],
+      "year": 2025,
+      "abstract": "General-purpose clinical natural language processing (NLP) tools are increasingly used for the automatic labeling of clinical reports. However, independent evaluations for specific tasks, such as pediatric chest radiograph (CXR) report labeling, are limited. This study compares four commercial clinical NLP systems - Amazon Comprehend Medical (AWS), Google Healthcare NLP (GC), Azure Clinical NLP (AZ), and SparkNLP (SP) - for entity extraction and assertion detection in pediatric CXR reports. Additionally, CheXpert and CheXbert, two dedicated chest radiograph report labelers, were evaluated on the same task using CheXpert-defined labels. We analyzed 95,008 pediatric CXR reports from a large academic pediatric hospital. Entities and assertion statuses (positive, negative, uncertain) from the findings and impression sections were extracted by the NLP systems, with impression section entities mapped to 12 disease categories and a No Findings category. CheXpert and CheXbert extracted the same 13 categories. Outputs were compared using Fleiss Kappa and accuracy against a consensus pseudo-ground truth. Significant differences were found in the number of extracted entities and assertion distributions across NLP systems. SP extracted 49,688 unique entities, GC 16,477, AZ 31,543, and AWS 27,216. Assertion accuracy across models averaged around 62%, with SP highest (76%) and AWS lowest (50%). CheXpert and CheXbert achieved 56% accuracy. Considerable variability in performance highlights the need for careful validation and review before deploying NLP tools for clinical report labeling.",
+      "url": "https://www.semanticscholar.org/paper/001a75451cbcb0f657dfeac65d6b666f814a2095",
+      "keywords": [
+        "clinical nlp",
+        "healthcare nlp",
+        "labeling clinical",
+        "processing nlp",
+        "nlp tools",
+        "extracted nlp",
+        "nlp systems"
+      ],
+      "cluster": 2,
+      "similarity": 0.3247232139110565
+    },
+    {
+      "title": "Sentiment Recognition in Images leveraging ResNet18 vs Vit Architecture",
+      "authors": [
+        "Paladugu Trisha Sai",
+        "G. H. Sri",
+        "T. Surekha"
+      ],
+      "year": 2024,
+      "abstract": "In the field of natural language processing (NLP), the analysis of sentiment detection in photos is crucial since it makes it easier to decipher and comprehend the feelings of the people shown in the images. by carefully contrasting Vision Transformer (ViT) designs with Residual Network (ResN et18) topologies in Deep Learning to evaluate their effectiveness in this situation. While RESNET18s have long been the cornerstone of image processing, ViT is a promising upstart that has demonstrated exceptional performance in a variety of computer vision workloads. The intention is to use these models for the job of face emotion recognition in humans. In this study, RESNET18 and ViT models that have been trained on a variety of datasets of photos with sentiment labels attached to human faces are being developed and implemented. Strong representations of human facial expressions may be learned by the models thanks to the training dataset's wide range of emotions. By utilizing cutting-edge techniques to guarantee peak performance during training and carrying out comprehensive tests to assess precision, effectiveness, and robustness in sentiment analysis tasks for both architectures. A full comparison study is also provided by mentioning the model complexity, processing needs, scalability, and graphic rendering methodologies.",
+      "url": "https://www.semanticscholar.org/paper/00392ec24012bf2c2f6e8f8d4a21235210bfc330",
+      "keywords": [
+        "photos sentiment",
+        "sentiment recognition",
+        "leveraging resnet18",
+        "emotion recognition",
+        "sentiment detection",
+        "face emotion",
+        "facial expressions"
+      ],
+      "cluster": -1,
+      "similarity": 0.3242558240890503
+    },
+    {
+      "title": "Instagram Threads: A Study on the User's Perspective of the App",
+      "authors": [
+        "Abhilash B K",
+        "Sunu Mary Abraham",
+        "Neethu Narayanan"
+      ],
+      "year": 2024,
+      "abstract": "This research study uses advanced Natural Language Processing (NLP) methods to examine user reviews of Meta's innovation, the Threads App, which is an Instagram sequel. The purpose of the study is to support the theory that “Threads is the next Twitter.” Through a methodical examination of user attitudes and viewpoints, this article adds to the extensive investigation of the features, functioning, and general user experience of the app. Sentiment analysis, NLP preparation, and data gathering from Google Play Store and Apple App Store reviews are all part of the study. The idea is validated by the findings of the study, which show that Threads—which bear a striking resemblance to Twitter—are widely accepted. The study ends with recommendations for future research, such as creating a sentiment prediction model and investigating different analytic techniques for better comprehension.",
+      "url": "https://www.semanticscholar.org/paper/005c8849d332fd137a74da8e2205f4154302b16d",
+      "keywords": [
+        "app sentiment",
+        "app instagram",
+        "instagram threads",
+        "threads twitter",
+        "threads app",
+        "app research",
+        "twitter methodical"
+      ],
+      "cluster": 0,
+      "similarity": 0.3223550319671631
+    },
+    {
+      "title": "Applications of Natural Language Processing to Geoscience Text Data and Prospectivity Modeling",
+      "authors": [
+        "C. Lawley",
+        "M. G. Gadd",
+        "M. Parsa",
+        "G. Lederer",
+        "G. Graham",
+        "A. Ford"
+      ],
+      "year": 2023,
+      "abstract": "Geological maps are powerful models for visualizing the complex distribution of rock types through space and time. However, the descriptive information that forms the basis for a preferred map interpretation is typically stored in geological map databases as unstructured text data that are difficult to use in practice. Herein we apply natural language processing (NLP) to geoscientific text data from Canada, the U.S., and Australia to address that knowledge gap. First, rock descriptions, geological ages, lithostratigraphic and lithodemic information, and other long-form text data are translated to numerical vectors, i.e., a word embedding, using a geoscience language model. Network analysis of word associations, nearest neighbors, and principal component analysis are then used to extract meaningful semantic relationships between rock types. We further demonstrate using simple Naive Bayes classifiers and the area under receiver operating characteristics plots (AUC) how word vectors can be used to: (1) predict the locations of “pegmatitic” (AUC = 0.962) and “alkalic” (AUC = 0.938) rocks; (2) predict mineral potential for Mississippi-Valley-type (AUC = 0.868) and clastic-dominated (AUC = 0.809) Zn-Pb deposits; and (3) search geoscientific text data for analogues of the giant Mount Isa clastic-dominated Zn-Pb deposit using the cosine similarities between word vectors. This form of semantic search is a promising NLP approach for assessing mineral potential with limited training data. Overall, the results highlight how geoscience language models and NLP can be used to extract new knowledge from unstructured text data and reduce the mineral exploration search space for critical raw materials.",
+      "url": "https://www.semanticscholar.org/paper/00518fef7ecf09bde5377098a8e4f3f031f278b0",
+      "keywords": [
+        "nlp geoscientific",
+        "geoscience text",
+        "descriptions geological",
+        "geoscientific text",
+        "rock descriptions",
+        "geoscience language",
+        "geological maps"
+      ],
+      "cluster": -1,
+      "similarity": 0.32147061824798584
+    }
+  ]
+}
