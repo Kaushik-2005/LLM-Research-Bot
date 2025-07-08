@@ -35,7 +35,7 @@ A powerful, interactive tool to search, filter, rank, and visualize research pap
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/llm-research-bot.git
+   git clone https://github.com/Kaushik-2005/LLM-Research-Bot.git
    cd llm-research-bot
    ```
 2. **Install dependencies:**
