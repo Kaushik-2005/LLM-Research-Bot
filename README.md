@@ -8,7 +8,6 @@ A powerful, interactive tool to search, filter, rank, and visualize research pap
 
 - **Semantic Search:** Find the most relevant research papers for your query using state-of-the-art language models.
 - **Step-by-Step Filtering:** See how your results are refined at each stage (initial search, year filter, keyword filter, content ranking).
-- **Beautiful UI:** Modern, user-friendly interface with clear progress panels, metrics, and expandable details.
 - **Paper Tree Visualization:** Explore not just how papers relate to your query, but also how they relate to each other.
 - **AI-Generated Summaries:** Get a literature review summary of your top papers.
 - **Export Results:** Download your results as CSV or JSON for further analysis or sharing.
