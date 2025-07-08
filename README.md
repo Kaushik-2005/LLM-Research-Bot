@@ -210,7 +210,7 @@ Suppose you want to find the most relevant papers on "Natural Language Processin
 ## 📬 Contact & Contributions
 
 - Found a bug? Have a feature request? Open an issue or pull request!
-- For questions, contact the maintainer at [your-email@example.com].
+- For questions, contact the maintainer at [kaushik.kesanapalli@gmail.com].
 
 ---
 
