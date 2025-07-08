@@ -3,6 +3,9 @@ from typing import List, Dict, Any, Tuple
 from sentence_transformers import SentenceTransformer, util, CrossEncoder
 from paper_search import SemanticScholarAPI
 import math
+import umap
+import hdbscan
+from collections import Counter, defaultdict
 
 # Step 1: Find 100 papers
 def find_papers(keywords: List[str], progress_callback=None) -> List[Dict[str, Any]]:
@@ -111,3 +114,40 @@ def get_pipeline_stats(papers: List[Dict[str, Any]]) -> Dict[str, Any]:
         }
     }
     return stats 
+
+def cluster_papers_by_topic(papers: List[Dict[str, Any]], n_neighbors: int = 10, min_cluster_size: int = 3):
+    """
+    Cluster papers by topic using UMAP for dimensionality reduction and HDBSCAN for clustering.
+    Returns:
+        - papers: with 'cluster' field added
+        - umap_coords: 2D coordinates for visualization
+        - cluster_labels: cluster label for each paper
+        - cluster_keywords: dict of cluster_id -> top keywords
+    """
+    if not papers:
+        return papers, [], [], {}
+    model = SentenceTransformer('all-MiniLM-L6-v2')
+    texts = [f"{p.get('title', '')}. {p.get('abstract', '')}" for p in papers]
+    embeddings = model.encode(texts, show_progress_bar=False)
+
+    # UMAP for 2D projection
+    reducer = umap.UMAP(n_neighbors=n_neighbors, n_components=2, random_state=42)
+    umap_coords = reducer.fit_transform(embeddings)
+
+    # HDBSCAN for clustering
+    clusterer = hdbscan.HDBSCAN(min_cluster_size=min_cluster_size)
+    cluster_labels = clusterer.fit_predict(embeddings)
+
+    # Assign cluster labels to papers
+    for paper, label in zip(papers, cluster_labels):
+        paper['cluster'] = int(label) if label >= 0 else None
+
+    # Extract top keywords per cluster
+    cluster_keywords = defaultdict(list)
+    for paper, label in zip(papers, cluster_labels):
+        if label >= 0:
+            cluster_keywords[label].extend(paper.get('keywords', []))
+    cluster_keywords = {cid: [kw for kw, _ in Counter(kw_list).most_common(5)]
+                        for cid, kw_list in cluster_keywords.items()}
+
+    return papers, umap_coords, cluster_labels, cluster_keywords 

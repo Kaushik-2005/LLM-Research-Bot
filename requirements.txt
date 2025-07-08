@@ -5,4 +5,9 @@ keybert
 sentence-transformers
 pandas>=2.0.0
 langchain
-langchain-groq 
+langchain-groq
+umap-learn
+hdbscan
+plotly
+bertopic
+streamlit-agraph 

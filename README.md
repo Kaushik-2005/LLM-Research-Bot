@@ -1,120 +1,219 @@
-# Research Paper Finder & Ranker
+# 📚 LLM Research Bot
 
-## Technical Overview
-This project implements a modular pipeline for **automated research paper discovery, filtering, and ranking** using state-of-the-art NLP and IR techniques. The system is designed for reproducibility, extensibility, and technical clarity.
-
----
-
-## Pipeline Architecture
-
-### 1. **Paper Retrieval (Step 1)**
-- **API Used:** [Semantic Scholar API](https://api.semanticscholar.org/api-docs/graph)
-- **Endpoint:** `/graph/v1/paper/search/bulk`
-- **Query:** User-provided keywords are sent as the `query` parameter.
-- **Fields:** The API returns metadata including `title`, `authors`, `year`, `abstract`, and (optionally) `fieldsOfStudy`.
-- **Batching:** The pipeline retrieves up to 100 papers per query, using token-based pagination if needed.
-- **Output:** A list of paper metadata dicts.
-
-### 2. **Keyword Extraction (KeyBERT)**
-- **Library:** [KeyBERT](https://github.com/MaartenGr/KeyBERT)
-- **Input:** For each paper, the `title` and `abstract` are concatenated.
-- **Model:** KeyBERT uses a BERT-based embedding model (by default, `all-MiniLM-L6-v2`) to generate document embeddings.
-- **Extraction:** KeyBERT extracts the top N (configurable, e.g., 7) keywords/phrases from the concatenated text, using cosine similarity between candidate n-grams and the document embedding.
-- **Output:** Each paper is augmented with a `keywords` field (list of strings).
-
-### 3. **Semantic Filtering (Step 2)**
-- **Embedding Model:** [sentence-transformers](https://www.sbert.net/) (`all-MiniLM-L6-v2`)
-- **Process:**
-    - The user query is embedded as a vector.
-    - Each paper's extracted `keywords` are joined and embedded.
-    - **Cosine similarity** is computed between the query embedding and each paper's keyword embedding.
-    - **Ranking:** All papers are ranked by similarity; the top K (e.g., 50) are retained for the next stage.
-- **Rationale:** This step ensures that only papers with high semantic relevance to the query are considered for final ranking.
-
-### 4. **Content-Based Ranking (Step 3)**
-- **Embedding Model:** [sentence-transformers](https://www.sbert.net/) (`all-MiniLM-L6-v2`)
-- **Process:**
-    - For each filtered paper, the `title`, `keywords`, and `abstract` are concatenated and embedded.
-    - The user query is embedded as before.
-    - **Cosine similarity** is computed between the query and each paper's full content embedding.
-    - **Ranking:** The top N (e.g., 20) papers are selected and presented to the user, sorted by similarity score.
-
-### 5. **(Optional) Topic Clustering**
-- **Algorithm:** [BERTopic](https://github.com/MaartenGr/BERTopic) or similar topic modeling/clustering algorithm.
-- **Input:** Embeddings of paper content (title+keywords+abstract).
-- **Process:**
-    - Papers are clustered in embedding space using HDBSCAN or UMAP+KMeans (as in BERTopic).
-    - Each cluster is assigned a set of representative topic keywords.
-- **Output:** Papers are annotated with cluster/topic labels, enabling topic-based exploration and filtering.
-
-### 6. **User Interface**
-- **Framework:** [Streamlit](https://streamlit.io/)
-- **Features:**
-    - User inputs query and configures number of top papers.
-    - Results are displayed for each pipeline stage (100, 50, top N).
-    - Paper metadata, similarity scores, and (optionally) cluster/topic labels are shown.
-    - All computation is performed in-memory; no persistent storage is required.
+A powerful, interactive tool to search, filter, rank, and visualize research papers using advanced language models and the Semantic Scholar API.
 
 ---
 
-## Data Flow Summary
-1. **User Query** → Semantic Scholar `/paper/search/bulk` → **Raw Paper Metadata**
-2. **Raw Paper Metadata** → KeyBERT → **Paper Keywords**
-3. **User Query + Paper Keywords** → sentence-transformers + cosine similarity → **Top 50 Papers**
-4. **User Query + Paper Content** → sentence-transformers + cosine similarity → **Top N Papers**
-5. **(Optional) Paper Content Embeddings** → BERTopic → **Topic Clusters**
+## 🚀 Key Features
+
+- **Semantic Search:** Find the most relevant research papers for your query using state-of-the-art language models.
+- **Step-by-Step Filtering:** See how your results are refined at each stage (initial search, year filter, keyword filter, content ranking).
+- **Beautiful UI:** Modern, user-friendly interface with clear progress panels, metrics, and expandable details.
+- **Paper Tree Visualization:** Explore not just how papers relate to your query, but also how they relate to each other.
+- **AI-Generated Summaries:** Get a literature review summary of your top papers.
+- **Export Results:** Download your results as CSV or JSON for further analysis or sharing.
+- **Transparent Pipeline:** Every step is visible, so you can see exactly how your results are refined.
 
 ---
 
-## Technologies & Methods
-- **Semantic Scholar API**: `/graph/v1/paper/search/bulk` endpoint for scalable, metadata-rich paper retrieval.
-- **KeyBERT**: BERT-based unsupervised keyword/keyphrase extraction from title+abstract.
-- **sentence-transformers**: State-of-the-art sentence/document embedding for semantic similarity and ranking.
-- **Cosine Similarity**: Vector-based similarity metric for ranking and filtering.
-- **BERTopic**: Topic modeling and clustering for unsupervised topic discovery (optional).
-- **Streamlit**: Interactive, real-time web UI for pipeline configuration and result exploration.
+## 🛠️ How It Works
+
+1. **User enters keywords** (e.g., "Natural Language Processing, Sentiment Analysis").
+2. **Papers are fetched** from Semantic Scholar using those keywords.
+3. **Pipeline refines results** through several steps:
+   - Initial search (broad retrieval)
+   - Year filter (removes old papers)
+   - Keyword similarity filter (semantic filtering)
+   - Content-based ranking (deep semantic ranking)
+4. **Results are displayed** with clear step panels, metrics, and expandable lists.
+5. **Visualizations** show both the relevance to your query and inter-paper relationships.
+6. **Summarization**: Generate an AI-powered literature review of your top results.
 
 ---
 
-## Setup & Usage
-1. **Install Requirements**
-   ```sh
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/llm-research-bot.git
+   cd llm-research-bot
+   ```
+2. **Install dependencies:**
+   ```bash
    pip install -r requirements.txt
    ```
-2. **Run the App**
-   ```sh
+3. **Set up your environment:**
+   - Add your Semantic Scholar API key and Groq API key to a `.env` file:
+     ```
+     SEMANTIC_SCHOLAR_API_KEY=your_key_here
+     GROQ_API_KEY=your_groq_key_here
+     ```
+4. **Run the app:**
+   ```bash
    streamlit run app.py
    ```
-3. **Configure and Search**
-   - Enter your query and select the number of top papers.
-   - View results at each pipeline stage, including similarity scores and (optionally) topic clusters.
 
 ---
 
-## Example Query
-- Query: `NLP, LLM, ASR, TTS, sentiment analysis`
-- Output: Top N most semantically relevant papers, with extracted keywords, similarity scores, and (optionally) topic clusters.
+## 🖥️ Usage
+
+- Enter your keywords in the sidebar and configure the number of top papers.
+- Click **Run Pipeline** to start the search and filtering process.
+- Explore each step's results using the step panels and expanders.
+- Switch between tabs to view:
+  - **Research Papers:** Full details and cards for each top paper.
+  - **AI Summary:** An LLM-generated literature review.
+  - **Paper Tree:** Visualize relationships between your query and the top papers, as well as between the papers themselves.
+- Download your results as CSV or JSON for further analysis.
 
 ---
 
-## FAQ
-**Q: Which Semantic Scholar endpoint is used?**  
-A: `/graph/v1/paper/search/bulk` for efficient, paginated paper search.
+## 🔎 Pipeline Steps Explained
 
-**Q: How are keywords extracted?**  
-A: Using KeyBERT on the concatenated title and abstract of each paper.
+### Step 1: Initial Search
+- Fetches up to 1000 papers matching your keywords from Semantic Scholar.
+- Shows how many papers were found.
+- You can expand to see all initial results.
 
-**Q: How is relevance determined?**  
-A: By computing cosine similarity between user query and paper embeddings (keywords and full content) using sentence-transformers.
+### Step 2: Year & Keyword Filtering
+- Filters out papers before your chosen year (e.g., since 2015).
+- Ranks papers by keyword similarity to your query using sentence-transformer embeddings.
+- You can expand to see the filtered results.
 
-**Q: Can I explore topics?**  
-A: Yes, optional clustering (e.g., BERTopic) groups papers by topic for further exploration.
+### Step 3: Content-Based Ranking
+- Uses a cross-encoder model to deeply compare your query to each paper's content (title + abstract).
+- Selects the top N most relevant papers (e.g., top 20).
+- These are shown as detailed cards with all metadata.
+
+### Step 4: Visualization & Export
+- View results as cards, download them, or explore relationships in the Paper Tree.
+- Generate an AI-powered summary of your top papers.
 
 ---
 
-## Credits
+## 📊 Metrics & Search Funnel
+
+- At the top of the Research Papers tab, you'll see key metrics:
+  - **Papers Found:** Total papers retrieved from Semantic Scholar.
+  - **Papers Since [Year]:** Papers published since your chosen year.
+  - **Keyword-Filtered:** Papers remaining after keyword similarity filtering.
+- These metrics help you understand how your search is refined at each step.
+
+---
+
+## 🌳 Paper Tree & Inter-Paper Connections
+
+- The Paper Tree shows your query as the root and each top paper as a child node.
+- **Orange edges** between papers indicate high content similarity (using the same cross-encoder model as for ranking).
+- This helps you see not just which papers are relevant, but which are closely related to each other.
+- Node size is proportional to the paper's relevance score.
+- Hover over a node to see the paper's title, year, and score.
+
+### How Inter-Paper Edges Are Computed
+- For each pair of top-k papers, the app computes the content similarity between their title+abstracts using the cross-encoder model.
+- If the similarity is above a threshold (e.g., 0.8), an orange edge is drawn between those two papers.
+- This visualizes clusters or groups of highly related papers within your results.
+
+---
+
+## 🏷️ Understanding Scores
+
+### Relevance Score (on Paper Cards)
+- The **Relevance** score shown on each paper card is the similarity between your search query and the paper, computed using a cross-encoder model.
+- This measures how relevant the paper is to your search.
+
+### Inter-Paper Similarity Score (Paper Tree Edges)
+- In the Paper Tree visualization, orange edges between papers indicate high content similarity between two papers, also computed using the cross-encoder model.
+- This measures how similar the content of two papers is to each other, not to your query.
+
+### Why the Scores May Differ
+- The **Relevance** score is always between the query and a paper.
+- The **Inter-Paper Similarity** score is between two different papers.
+- The cross-encoder model may output scores on different scales for these two types of comparisons.
+- For example, relevance scores might be in the range 0–10, while inter-paper similarity might be between 0 and 1, or even negative values, depending on the model.
+
+### How to Interpret
+- **Relevance**: Higher means the paper is more relevant to your search.
+- **Inter-Paper Edge**: An edge means the two papers are highly similar in content (above a set threshold).
+- The threshold for drawing an edge is set based on the similarity score (e.g., >0.8).
+
+### Note
+- It is normal for these scores to be on different scales.
+- If you want to adjust the threshold for inter-paper edges to match the scale of the relevance score, you can do so in the code.
+
+---
+
+## 🧠 AI-Generated Literature Review
+
+- The app can generate a multi-paragraph, academic-style summary of your top papers using an LLM (via Groq API).
+- The summary includes:
+  - Introduction to the research domain
+  - Thematic analysis of the papers
+  - Conclusion and future directions
+- Each reference in the summary is clearly cited with a unique key (e.g., [#1, Author et al., Year]).
+
+---
+
+## ⚙️ Customization & Advanced Usage
+
+- **Adjust thresholds** for filtering and inter-paper edges in `app.py`.
+- **Change models** or add new visualization features as needed.
+- **API keys** and other settings can be managed in `.env`.
+- **Add new pipeline steps** or modify existing ones in `pipeline.py`.
+- **Extend the UI** with new tabs, metrics, or export options.
+
+---
+
+## 🧩 Example Use Case
+
+Suppose you want to find the most relevant papers on "Natural Language Processing, Sentiment Analysis" since 2015:
+
+1. Enter your keywords and set the year to 2015.
+2. The app finds 3000+ papers, filters to 900+ after keyword similarity, and ranks the top 20 by content.
+3. You can:
+   - Expand to see all papers at each step
+   - View detailed cards for the top 20
+   - See which papers are most closely related in the Paper Tree
+   - Download your results
+   - Generate an AI-powered summary
+
+---
+
+## ❓ Troubleshooting & FAQ
+
+- **Why do some papers have no abstract?**  
+  Not all papers in Semantic Scholar have abstracts available.
+- **Why are some scores different?**  
+  See the "Understanding Scores" section above.
+- **How can I add new features?**  
+  The code is modular—see `pipeline.py` and `app.py` for extension points.
+- **How do I change the similarity threshold for inter-paper edges?**  
+  Edit the `SIM_THRESHOLD` value in the Paper Tree tab code.
+- **Can I use a different LLM or embedding model?**  
+  Yes! Swap out the model in `pipeline.py` or `literature_summarizer.py`.
+
+---
+
+## 🙏 Credits & References
+
 - [Semantic Scholar API](https://www.semanticscholar.org/product/api)
+- [Sentence Transformers](https://www.sbert.net/)
+- [Streamlit](https://streamlit.io/)
+- [LangChain](https://www.langchain.com/)
+- [Pyvis](https://pyvis.readthedocs.io/) / [streamlit-agraph](https://github.com/ChrisDelClea/streamlit-agraph)
 - [KeyBERT](https://github.com/MaartenGr/KeyBERT)
-- [Sentence-Transformers](https://www.sbert.net/)
-- [BERTopic](https://github.com/MaartenGr/BERTopic)
-- [Streamlit](https://streamlit.io/) 
+- [UMAP](https://umap-learn.readthedocs.io/en/latest/)
+- [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/)
+
+---
+
+## 📬 Contact & Contributions
+
+- Found a bug? Have a feature request? Open an issue or pull request!
+- For questions, contact the maintainer at [your-email@example.com].
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details. 
